@@ -19,7 +19,10 @@ dp = Dispatcher(bot)
 # Хэндлер на команду /start
 @dp.message_handler(commands="start")
 async def cmd_start(message: types.Message):
-    await message.answer("Hello!")
+    text_message = "Barcode Creator Бот генерирует изображение штрихкода или QR-кода по переданной ему строке.\n"
+    text_message = text_message + "Просто отправь боту строку с кодом и он обратно пришлет изображение."
+                                        
+    await message.answer(text_message)
 
 
 @dp.message_handler()
