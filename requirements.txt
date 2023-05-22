@@ -1,2 +1,5 @@
 aiogram==2.22.2
 python-dotenv==0.21.0
+qrcode==7.4.2
+python-barcode==0.14.0
+Pillow==9.5.0
